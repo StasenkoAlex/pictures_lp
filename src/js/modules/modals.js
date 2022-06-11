@@ -54,7 +54,6 @@ const modals = () => {
       }
     });
     if (!display) {
-      console.log('show');
       setTimeout(() => {
         modal.style.display = 'block';
         document.body.style.oveflow = 'hidden';
