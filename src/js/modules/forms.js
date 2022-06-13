@@ -34,7 +34,9 @@ const forms = () => {
       let data = new FormData(form);
       let path;
 
-      formParent.closest('.popup-design') ? (path = './assets/server.php') : (path = './assets/question.php');
+      formParent.closest('.popup-design') || formParent.closest('.calc')
+        ? (path = './assets/server.php')
+        : (path = './assets/question.php');
       postData(path, data)
         .then((res) => {
           form.style.display = 'none';
