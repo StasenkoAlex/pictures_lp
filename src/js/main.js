@@ -5,6 +5,7 @@ import mask from './modules/mask';
 import showMoreStyles from './modules/showMoreStyles';
 import calcCost from './modules/calcCost';
 import images from './modules/images';
+import scrolling from './modules/scrolling';
 
 document.addEventListener('DOMContentLoaded', () => {
   'use strict';
@@ -16,4 +17,5 @@ document.addEventListener('DOMContentLoaded', () => {
   showMoreStyles('.button-styles', '.styles .row');
   calcCost('#size', '#material', '#options', '.promocode', '.calc-price');
   images('.sizes-block');
+  scrolling('.pageup');
 });

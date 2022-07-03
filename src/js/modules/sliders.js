@@ -22,7 +22,7 @@ const sliders = (slider, dir, prev, next) => {
     }
   }
 
-  //   showSlide(sliderIndex);
+  showSlide(sliderIndex);
 
   function plusSlide(n) {
     showSlide((sliderIndex += n));
